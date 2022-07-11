@@ -1,0 +1,423 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+/*
+main {
+	width: 940px;
+	margin: 0 auto;
+} */
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+/* CSS da página inicial */
+
+.banner{
+	width: 100%;
+}
+
+  /* .titulo-principal {
+	text-align: center;
+	font-size: 2em; /* 2 x o tamanho base da fonte. Se o tamanho base for 10px => o tamnaho do título será de 20px.  */
+	/*margin: 0 0 1em; /* espaçamento proporcional ao tamanho da fonte. Esp para baixo = 1em. */
+	/*clear: left; /* para limpar o float a esquerda que colocamos p/ a imagem utensilios. */
+/*} 
+
+*/
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgb(0,0,0);
+	/*text-shadow: 2px 2px #FF0000;
+	sombra em cima do texto, das letras */
+}
+
+/* .titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgba(0,0,0,0.3);
+} visibilidade de 30% */
+
+
+/*.titulo-principal:first-letter {
+	font-weight: bold;
+}*/
+
+/*.titulo-principal:before {
+	content: "[";
+}*/
+
+/*.titulo-principal:after {
+	content: "]";
+}*/
+
+/* p: first-line{
+	font-style: italic;
+} 1a linha em itálico */
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style:italic;
+}
+
+.mapa {
+	padding: 3em 0;
+	background:linear-gradient(#FEFEFE, #888888);
+}
+
+/* em <=> espaçamento interno proporcional ao 
+tamanho da página. 
+linear-gradiente: o css3 faz o gradiente da cor
+laranja, p/ o azul, p/ o red e p/ o preto. Pode-
+mos colocar qtas cores quisermos! Posso tb pôr
+a inclinação na 1a cor: 45 deg, ou 90 deg, orange
+ou posso colocar o degradê começando do laranja,
+i.e 50% da pag fica laranja e o degradê começa 
+a partir daí: (90deg, orange 50%, blue, red, black)
+Temos tb o degradê em círculos ao invés de linear,
+que seria o radial-gradient */
+
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios{
+	padding: 3em 0;
+	background: #888888;
+	/*box-shadow: inset 0 0 30px #FF0000;
+	sombra na borda interna do elemento
+	com 30px de espalhamento = 'blur' */
+}
+/* O cinza ficou limitado a lateral. Para 
+acertar isso teremos que mexer no '.main'
+tirar parâmentros dele e colar nos principal,
+no mapa e nos beneficios. Ops. Nos benef não
+precisa, pois ele já tem a largura do elemento
+e centralizando a tela no meio (ver param do 
+conteudo-benef) */ 
+
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top; /*linha alinhada pela
+	parte de cima (e não pela parte de baixo)*/
+}
+
+.itens {
+    line-height: 1.5;
+/* altura da linha - em geral - é proporcional
+ao tamanho da fonte q é 1, mas quero q seja 1.5 =
+ao tam da fonte + 50% */	
+}
+
+/* agora, p negritar só a 1a linha de itens 
+vamos usar recurso novo do css 3 q é a pseudo-
+classe */
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+/* agora, p negritar só a 4a linha de itens, 
+faríamos:
+
+.itens:nth-child(4) {
+	font-weight: bold;
+} */
+
+/* agora, p negritar todas as linhas pares, 
+faríamos:
+
+.itens:nth-child(2n) {
+	font-weight: bold;
+} */
+
+/* agora, p negritar todas as linhas ímpares, 
+faríamos:
+.itens:nth-child(2n+1) {
+	font-weight: bold;
+} */
+
+.itens:before{
+	content:"🟊"
+}
+
+/* .itens:after{
+	content:"🟊"
+}*/
+
+.imagem-beneficios{
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+/* opacidade usada sobre um elemento
+Ela tb pode ser usada sobre as cores!
+É a camada alfa do rgb que vira rgba em que seu 
+último parâmetro (de 0 até 1) é a opacidade
+*/
+/* para fazer sombra usamos  o box-shadow 
+Ela tem propriedade no eixo X, no eixo Y e a cor 
+X=Y=10px => deslocará a sombra 10 px 
+Posso adicionar uma 3a prop que é o grau de 
+espalhamento da sombra que varia do sólido
+para o transparente. Essa prop melhora a
+qualidade da sombra. Aqui, testaremos o 'blur' = 5px 
+'blur' = borrão 
+O 4o elemento é a intensidade da borda = a partir
+do tamanho do elem o qto + a sombra irá se 
+espalhar. Vamos colocar 20px */
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
+}
+
+/* opacidade = 30%. Qdo o mouse passa sobre o
+elemento (imagem) só poderemos ver 30% do mesmo.
+Qdo o mouse estiver fora do elemento, veremos
+100% do elemento. E a transição de 1 situação
+para outra levará 400 ms = 0.4 s. */ 
+
+.utensilios {
+	width: 120px;
+	float: left; /* para fazer a imagem flutuar. 
+	Ele vai pra cima, mas sua sombra fica, delimitando
+	o espaço que ela ocupava, impedindo o texto ser 
+	escrito nesse local. Daí, ele vai para a esquerda.
+	Assim, o float serve para descolar o elemento na
+	lateral e deixar os outros elementos ao redor. */
+	margin: 0 20px 20px 0; /* pra cima, para a direita,
+	para baixo e para a esquerda. */
+}	
+
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+	/* 1em pra cima e pra baixo e auto para as laterais */
+}
+
+/* Seletores Avançados do CSS. Exemplo: > p 
+Este seletor (>) pegará todos os "filhos diretos".
+O main > p fara o que? Pegará toda as tags 'p' que são "filhos diretos" da main.
+Ignora as demais tags 'p' do html, porque elas não são
+filhas da main, são filnas da section etc. */
+
+/*main > p {
+	background: red;
+}*/
+
+/* Exemplo: + p 
+Este seletor (+) pegará o primeiro "irmão" que vem depois de 1 elemento.
+O img + p fara o que? Usará a img como "âncora" e  'p' como "irmão direto" da img.
+Então pegará o 1o parágrafo (p) após a imagem*/
+
+/*img + p {
+	background: blue;
+}*/
+
+/* E para pegarmos todos os parágrafos após
+a imagem? Usamos o ~: */
+
+/*img ~ p {
+	background: yellow;
+}*/
+/* E para pegarmos todos os parágrafos que 
+não tenhamm o id='missão'? Usamos o not(#missao): */
+
+/*.principal p:not(#missao) {
+	background: orange;
+}*/
+
+/*A exclusão é um elemento poderoso no CSS, principal// qdo 
+realizamos manutenção em algum código que já existe 
+e que não devemos modificar tanto o HTML.*/
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+	h1{
+		text-align: center;
+	}
+	nav{
+		position: static;
+	}
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+}	
